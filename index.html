@@ -5,11 +5,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My First Web App!</h1>
-  <p>Enter your name:</p>
-  <input type="text" id="nameInput" placeholder="Your name here">
-  <button onclick="sayHello()">Say Hello</button>
-  <p id="greeting"></p>
+  <header class="site-header">
+    <h1>Welcome to My First Web App!</h1>
+    <div class="greeting-row">
+      <label for="nameInput">Enter your name:</label>
+      <input type="text" id="nameInput" placeholder="Your name here">
+      <button id="helloBtn">Say Hello</button>
+      <p id="greeting" class="greeting-text"></p>
+    </div>
+  </header>
+
+  <main id="gallery" class="gallery" aria-label="Tree photo gallery">
+    <!-- Slides will be injected here -->
+  </main>
+
+  <div class="controls">
+    <button id="prevBtn" aria-label="Previous">▲ Prev</button>
+    <span id="positionIndicator" class="indicator"></span>
+    <button id="nextBtn" aria-label="Next">Next ▼</button>
+  </div>
 
   <script src="script.js"></script>
 </body>

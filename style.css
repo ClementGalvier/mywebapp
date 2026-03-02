@@ -21,3 +21,72 @@ button {
 button:hover {
   background-color: #2980b9;
 }
+
+/* Header and greeting */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(240, 248, 255, 0.95);
+  padding: 12px 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  z-index: 10;
+}
+.greeting-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+.greeting-text {
+  margin-left: 12px;
+  font-weight: 600;
+}
+
+/* Gallery: vertical, full-viewport slides with snap */
+#gallery {
+  height: calc(100vh - 110px);
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+.slide {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+.slide img {
+  max-height: 88vh;
+  max-width: 92vw;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+/* Controls */
+.controls {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  z-index: 20;
+}
+.controls button {
+  padding: 8px 12px;
+  background: #2ecc71;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.controls button:hover { background: #27ae60; }
+.indicator {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+}
