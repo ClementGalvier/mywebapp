@@ -13,7 +13,6 @@ function sayHello() {
 const images = [
   "https://source.unsplahttps://www.publicdomainpictures.net/pictures/240000/velka/tree-landscape.jpg",
   "https://tse1.mm.bing.net/th/id/OIP.AzKGVH3XhgtmFDwsLV1VGAHaE7?pid=ImgDet&w=181&h=120&c=7&dpr=1.5&o=7&rm=3"
-
 ];
 
 const gallery = document.getElementById('gallery');
